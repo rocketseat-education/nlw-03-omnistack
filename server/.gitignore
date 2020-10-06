@@ -1,0 +1,6 @@
+node_modules
+
+src/database/database.sqlite
+
+uploads/*
+!uploads/.gitkeep
