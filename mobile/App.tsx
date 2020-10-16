@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'react-native'
 
 import { 
   useFonts, 
@@ -19,6 +20,11 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   } else {
-    return <AppStack />;
+    return (
+      <>
+        <StatusBar backgroundColor="transparent" translucent barStyle="dark-content" />
+        <AppStack />
+      </>
+    );
   }
 }

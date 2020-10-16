@@ -4,7 +4,7 @@ import { RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
-import MapView, { Marker, Callout } from 'react-native-maps';
+import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import mapMarkerImg from '../images/map-marker.png';
 
@@ -22,6 +22,7 @@ export default function OrphanagesMap() {
   return (
     <View style={styles.container}>
       <MapView 
+        provider={PROVIDER_GOOGLE}
         initialRegion={{
           latitude: -27.2092052,
           longitude: -49.6401092,

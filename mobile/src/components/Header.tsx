@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
   container: {
     padding: 24,
     backgroundColor: '#f9fafc',
-    opacity: 0.9,
     borderBottomWidth: 1,
     borderColor: '#DDE3F0',
     paddingTop: 44,
